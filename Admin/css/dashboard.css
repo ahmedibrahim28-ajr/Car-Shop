@@ -1,0 +1,58 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dashboard p {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 150px;
+}
+
+.dashboard p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Statistics styling */
+.dashboard p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Label text */
+.dashboard p::before {
+    content: attr(data-label);
+    font-size: 1rem;
+    color: #94a3b8;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+/* Gradients for different cards */
+.dashboard p:nth-child(1) {
+    background: linear-gradient(135deg, #e0f2fe, #ffffff);
+}
+
+.dashboard p:nth-child(2) {
+    background: linear-gradient(135deg, #f0fdf4, #ffffff);
+}
+
+.dashboard p:nth-child(3) {
+    background: linear-gradient(135deg, #fef3c7, #ffffff);
+}

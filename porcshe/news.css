@@ -1,0 +1,80 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.news-item {
+    background: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.news-item h2 {
+    margin: 0 0 10px;
+    color: #000;
+}
+.news-item p {
+    color: #555;
+}
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+/* Logo styles */
+#navbar img {
+    width: 80px;
+    margin-left: 100px;
+}
+
+/* Navigation menu styles */
+nav ul {
+    display: flex;
+    list-style: none; /* Remove default bullets */
+    margin: 0;
+    padding: 0;
+    margin-right: 100px; /* Space on the right */
+}
+
+nav ul li a {
+    padding: 15px 20px;
+    font-weight: 600;
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* Adjust to your preferred color */
+}
+
+/* Hover effect for links */
+nav ul li a:hover {
+    border-bottom: 2px solid #e4b95b;
+}
+#navbar ul li a:hover {
+    color: #fff;
+    border-bottom: 2px solid #e4b95b;
+  }

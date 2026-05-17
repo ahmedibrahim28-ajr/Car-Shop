@@ -1,0 +1,35 @@
+/* Centering the form_group */
+form {
+    max-width: 600px; /* Set a max width for the form */
+    margin: 50px auto; /* Center the form on the page */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold; 
+    margin-bottom: 8px; 
+    display: block;
+}
+
+/* Submit button styling */
+form button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}

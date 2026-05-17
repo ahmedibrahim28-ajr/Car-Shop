@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+header#signup-header {
+  height: 50vh;
+  background: url("./img/offer-background.jpg") center center/cover fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+header#signup-header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+header#signup-header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+header#signup-header .logo {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+section#signup-section {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+}
+
+.signup-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+#signup-form h2 {
+  text-align: center;
+  color: #383848;
+  margin-bottom: 1rem;
+}
+
+#signup-form label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+  color: #383848;
+}
+
+#signup-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#signup-form input:focus {
+  border-color: #e4b95b;
+  outline: none;
+}
+
+#signup-form button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #e4b95b;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#signup-form button:hover {
+  background: #d4a74c;
+}
+
+#signup-form .login-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#signup-form .login-link a {
+  color: #e4b95b;
+  text-decoration: none;
+}
+
+#signup-form .login-link a:hover {
+  text-decoration: underline;
+}
+
+footer#footer {
+  background-color: #383848;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 14px;
+}
